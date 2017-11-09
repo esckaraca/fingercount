@@ -23,7 +23,7 @@ while nframes <= 100   %get frames from video
     
     se1 = strel('disk',40);
     se = strel('disk',85);
-    IM5 = imerode(IM4,se1);                                     %Erode palm
+    IM5 = imerode(IM4,se1);                                     %Erode fingers
     IM6 = imdilate(IM5,se);                                     %Dilate palm
     figure(1);subplot(3,3,5);imshow(IM6);title('Palm');
     
